@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #666;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+/* Менюшка */
+h1 {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  /* margin-top: -25px; */
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+.lines {
+  padding: 0;
+  margin-top: -95px;
+  width: 195px;
+  height: 60px;
+  fill: #21bda0;
+}
+.svg {
+  height: 100%;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-name: slidein;
+  overflow: hidden;
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+.waves {
+  padding: 0;
+  margin-top: ;
+}
+.main {
+  /* max-width: 1920px; */
+  margin: 0 auto;
+}
+.header {
+  padding: 30px 0;
+}
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  max-width: 1240px;
+  background-color: rgb(255, 255, 255);
+}
+.nav {
+  display: inline-block;
+}
+.nav_items {
+  padding: 0;
+}
+.nav_item {
+  float: left;
+}
+.nav_link {
+  text-align-last: center;
+  padding: 15px;
+}
+
+.bottom_green:hover {
+  border-bottom: 2px green solid;
+}
+/* Блок монетизируй скилы */
+
+.monetize {
+  /* position: relative; */
+  max-width: 100%;
+  height: 100%;
+  background-image: url("../img/monetize-bg.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-color: black;
+}
+.monetize-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 50px;
+  z-index: 5;
+  position: relative;
+  /* background-color: black; */
+}
+.monetize-content a {
+  margin-left: 10px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1em;
+  color: black;
+  transition: 0.3s linear;
+  border-bottom: 3px #21bda1 solid;
+}
+.m-links {
+  position: absolute;
+}
+a span {
+  transition: 0.3s linear;
+}
+.monetize-content a:hover span {
+  font-size: 29px;
+}
+.monetize-content a:hover {
+  color: #21bda1;
+}
+.green {
+  color: #21bda1;
+}
+svg.waves {
+  padding: 0;
+  margin: 0;
+  fill: white;
+  transform: scale(-2);
+  width: 1268px;
+  max-width: 100%;
+  z-index: 1;
+}
+/* Зарабатывай в ... */
+.offer {
+  width: 100%;
+  height: 100%;
+  height: 1000px;
+}
+.offer h2 {
+  text-align: center;
+}
+.offer-wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.game-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.game {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.none {
+  display: none;
+}
+.content {
+  padding: 0 100px;
+}
+.game-tabs-content {
+  display: flex;
+  justify-content: space-between;
+}
