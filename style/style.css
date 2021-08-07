@@ -330,7 +330,7 @@ ul.requirements {
 }
 a.btn-mon {
   display: none;
-  color: white;
+  color: black;
 }
 @media (max-width: 1416px) {
   .vacancy-tab {

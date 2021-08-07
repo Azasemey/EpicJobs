@@ -1,6 +1,6 @@
 "use strict";
 const gamesDescr = document.querySelectorAll(".game-tabs-content > div");
-const mainTabs = document.querySelectorAll(".game-tabs > button");
+const mainTabs = document.querySelectorAll("button[data-game]");
 const vacTabs = document.querySelectorAll("ul.vacancies > li > button");
 const vacDescr = document.querySelectorAll(".descr-img");
 const mobVac = document.querySelectorAll(".mob");
