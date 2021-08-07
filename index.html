@@ -1,7 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="t.me/azasemey" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Работа в популярных онлайн играх. Бустинг в World of Warcraft, Destiny 2, Dota 2. Еженедельные выплаты!"
+    />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Зарабатывай на бустинге в играх!"
+    />
+    <link rel="canonical" href="https://epicjobs.ru/" />
+    <title>Зарабатывай на бустинге в играх!</title>
     <link rel="stylesheet" href="style/norm.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,7 +48,6 @@
       });
     </script>
     <!-- Marquiz script end -->
-    <title>EpicJobs</title>
   </head>
   <body>
     <svg style="display: none">
@@ -137,25 +149,30 @@
       </symbol>
     </svg>
     <header class="header">
-      <div class="header_wrap">
-        <a href="https://epicjobs.ru" class="logo"
-          ><img src="img/logo.png" alt="Logo" width="176" height="46"
-        /></a>
-        <nav class="nav">
-          <ul class="nav_items">
-            <li class="nav_item">
-              <a href="#" class="nav_link bottom_green">Главная</a>
-            </li>
-            <li class="nav_item">
-              <a href="#" class="nav_link bottom_green">FAQ</a>
-            </li>
-            <li class="nav_item">
-              <!-- <a href="#" class="nav_link bottom_green">Подать заявку</a> -->
-              <a class="btn-request" href="#popup:marquiz_60cdd13217324a003e5263e4"
-              >Подать заявку</a
-            </li>
-          </ul>
-        </nav>
+      <div class="header-full">
+        <div class="header_wrap">
+          <a href="https://epicjobs.ru" class="logo"
+            ><img src="img/logo.png" alt="Logo" width="176" height="46"
+          /></a>
+          <nav class="nav">
+            <ul class="nav_items">
+              <li class="nav_item">
+                <a href="#" class="nav_link bottom_green">Главная</a>
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link bottom_green">FAQ</a>
+              </li>
+              <li class="nav_item">
+                <!-- <a href="#" class="nav_link bottom_green">Подать заявку</a> -->
+                <a
+                  class="btn-request"
+                  href="#popup:marquiz_60cdd13217324a003e5263e4"
+                  >Подать заявку</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -163,15 +180,23 @@
         <div class="top-waves"></div>
         <!-- <div class="m-wrap"> -->
         <div class="monetize-content">
-          <h1>Зарабатывай <span class="green">Играючи</span></h1>
+          <h1>Бустинг в <span class="green">Играх</span></h1>
           <div class="svg">
             <svg class="lines"><use xlink:href="#lines"></use></svg>
           </div>
           <h2>Монетизируй Свои Скилы</h2>
           <div class="m-links">
-            <a href="#"><span>👉 </span>Как стать Бустером?</a>
-            <a href="#"><span>👉 </span>Кто такой бустер?</a>
-            <a class="btn-request btn-mon" href="#popup:marquiz_60cdd13217324a003e5263e4">Подать заявку</a>
+            <a href="how-to-become-a-booster.html"
+              ><span>👉 </span>Как стать Бустером?</a
+            >
+            <a href="who-is-the-booster.html"
+              ><span>👉 </span>Кто такой бустер?</a
+            >
+            <a
+              class="btn-request btn-mon"
+              href="#popup:marquiz_60cdd13217324a003e5263e4"
+              >Подать заявку</a
+            >
           </div>
         </div>
         <!-- </div> -->
@@ -228,34 +253,36 @@
                 />
               </button>
               <!-- Game tabs -->
-
             </div>
             <!-- Main Tabs -->
           </div>
           <div class="vacancy-tab-adaptive">
             <div class="mob-wow mob" id="mob-wow">
-            <ul class="vacancies">
-              <li class="vacancy">
-                <button class="btn active vac bottom_green" data-vac="solo-wow">
-                  Соло Бустер
-                </button>
-              </li>
-              <li class="vacancy">
-                <button class="btn vac bottom_green" data-vac="raider-wow">
-                  Рейдер
-                </button>
-              </li>
-              <li class="vacancy">
-                <button class="btn vac bottom_green" data-vac="mythic-wow">
-                  Мифик+
-                </button>
-              </li>
-              <li class="vacancy">
-                <button class="btn vac bottom_green" data-vac="pvp-wow">
-                  PvP
-                </button>
-              </li>
-            </ul>
+              <ul class="vacancies">
+                <li class="vacancy">
+                  <button
+                    class="btn active vac bottom_green"
+                    data-vac="solo-wow"
+                  >
+                    Соло Бустер
+                  </button>
+                </li>
+                <li class="vacancy">
+                  <button class="btn vac bottom_green" data-vac="raider-wow">
+                    Рейдер
+                  </button>
+                </li>
+                <li class="vacancy">
+                  <button class="btn vac bottom_green" data-vac="mythic-wow">
+                    Мифик+
+                  </button>
+                </li>
+                <li class="vacancy">
+                  <button class="btn vac bottom_green" data-vac="pvp-wow">
+                    PvP
+                  </button>
+                </li>
+              </ul>
             </div>
             <div class="mob-classic mob none" id="mob-classic">
               <ul class="vacancies">
@@ -275,7 +302,6 @@
                     Dungeons
                   </button>
                 </li>
-
               </ul>
             </div>
           </div>
@@ -353,7 +379,7 @@
                       height="270"
                     />
                   </div>
-                  <!-- SOLO WOW --------------------- -->
+                  <!-- SOLO WOW -->
                 </div>
                 <div id="raider-wow" class="descr-img none">
                   <div class="vac-description">
@@ -390,7 +416,7 @@
                       height="270"
                     />
                   </div>
-                  <!-- RAIDER WOW --------------------- -->
+                  <!-- RAIDER WOW -->
                 </div>
                 <div id="mythic-wow" class="descr-img none">
                   <div class="vac-description">
@@ -424,7 +450,7 @@
                       height="270"
                     />
                   </div>
-                  <!-- MYTHIC WOW --------------------- -->
+                  <!-- MYTHIC WOW -->
                 </div>
                 <div id="pvp-wow" class="descr-img none">
                   <div class="vac-description">
@@ -460,7 +486,7 @@
                       height="270"
                     />
                   </div>
-                  <!-- PVP WOW --------------------- -->
+                  <!-- PVP WOW -->
                 </div>
               </div>
             </div>
@@ -485,7 +511,6 @@
                         Dungeons
                       </button>
                     </li>
- 
                   </ul>
                 </div>
 
@@ -520,17 +545,19 @@
                       height="270"
                     />
                   </div>
-                  <!-- SOLO WOW --------------------- -->
+                  <!-- SOLO WOW -->
                 </div>
                 <div id="dungeons-classic" class="descr-img none">
                   <div class="vac-description">
                     <div>
                       <b>
-                        Вакансия подойдет для укомплектованных и сыгранных групп.
+                        Вакансия подойдет для укомплектованных и сыгранных
+                        групп.
                       </b>
                       <b>Задачи:</b>
                       <p>
-                        Прохождение подземелий разных сложностей (нормал или героик) , фарм фулл гиров.
+                        Прохождение подземелий разных сложностей (нормал или
+                        героик) , фарм фулл гиров.
                       </p>
                       <b>Требования:</b>
                       <ul class="requirements">
@@ -545,15 +572,12 @@
                   <div class="vac-img">
                     <video
                       src="img/vac/classic/dungeons-classic.webm"
-                      alt="Dungeons Classic"
                       width="480"
                       height="270"
-                    />
+                    ></video>
                   </div>
-                  <!-- Dungeons Classic --------------------- -->
+                  <!-- Dungeons Classic -->
                 </div>
-                
-                
               </div>
               <!-- Classic -->
             </div>
@@ -584,85 +608,105 @@
                     </div>
                   </div>
                   <div class="vac-img">
-                    <img src="img/vac/wow/solo-wow.webp" alt="Wow Solo" width="480" height="270">
+                    <img
+                      src="img/vac/wow/solo-wow.webp"
+                      alt="Wow Solo"
+                      width="480"
+                      height="270"
+                    />
                   </div>
-                  <!-- Destiny --------------------- -->
+                  <!-- Destiny -->
                 </div>
-                </div>
-                
-                
               </div>
+            </div>
             <div id="hs" class="none">
               <div class="game">
                 <div id="hs-all" class="descr-img">
                   <div class="vac-description">
                     <div>
                       <p>
-                        Необходимо участвовать в рейтинговых матчах, прокачивать рейтинг аккаунта, фармить редкие карты, собирать колоды и играть в аркадах. Работать придётся как на связи с клиентом, так и на его аккаунте.
+                        Необходимо участвовать в рейтинговых матчах, прокачивать
+                        рейтинг аккаунта, фармить редкие карты, собирать колоды
+                        и играть в аркадах. Работать придётся как на связи с
+                        клиентом, так и на его аккаунте.
                       </p>
                       <b>График:</b>
                       <p>
-                        От 4 часов в день. График придется подстраивать под клиента.
+                        От 4 часов в день. График придется подстраивать под
+                        клиента.
                       </p>
                       <b>Требования:</b>
                       <ul class="requirements">
-                        <li>
-                          Опыт игры в Hearthstone от 2 лет.
-                        </li>
+                        <li>Опыт игры в Hearthstone от 2 лет.</li>
                         <li>Минимум 5 легенд на собственном аккаунте.</li>
-                        <li>Знание основных тактик и выигрышных колод в актуальной</li>
+                        <li>
+                          Знание основных тактик и выигрышных колод в актуальной
+                        </li>
                         <li>Знание английского языка на хорошем уровне.</li>
-                        <li>Самодисциплина, ответственность, пунктуальность.</li>
+                        <li>
+                          Самодисциплина, ответственность, пунктуальность.
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="vac-img">
-                    <img src="img/vac/hs.webp" alt="Hearthstone promo" width="480" height="270">
+                    <img
+                      src="img/vac/hs.webp"
+                      alt="Hearthstone promo"
+                      width="480"
+                      height="270"
+                    />
                   </div>
-                  <!-- Hearthstone --------------------- -->
+                  <!-- Hearthstone -->
                 </div>
-                </div>
-                
-                
               </div>
+            </div>
             <div id="dota" class="none">
               <div class="game">
                 <div id="dota-all" class="descr-img">
                   <div class="vac-description">
                     <div>
                       <p>
-                        От бустера требуется прокачивать рейтинг, поднимать винрейт и статистику аккаунта, фармить боевой пропуск и так далее.
+                        От бустера требуется прокачивать рейтинг, поднимать
+                        винрейт и статистику аккаунта, фармить боевой пропуск и
+                        так далее.
                       </p>
                       <b>График:</b>
                       <p>
-                        До 8 часов в день. У бустеров свободный график, ограничивают только дедлайны.
+                        До 8 часов в день. У бустеров свободный график,
+                        ограничивают только дедлайны.
                       </p>
                       <b>Требования:</b>
                       <ul class="requirements">
-                        <li>
-                          Опыт игры в Dota 2.
-                        </li>
+                        <li>Опыт игры в Dota 2.</li>
                         <li>Хороший ММР — от 5500.</li>
-                        <li>Высокий винрейт — лучше, чтобы он стремился к 100% на 1-2 героях.</li>
-                        <li>Терпение, усидчивость, умение самостоятельно выстроить рабочий график, самоконтроль и дисциплина.</li>
+                        <li>
+                          Высокий винрейт — лучше, чтобы он стремился к 100% на
+                          1-2 героях.
+                        </li>
+                        <li>
+                          Терпение, усидчивость, умение самостоятельно выстроить
+                          рабочий график, самоконтроль и дисциплина.
+                        </li>
                       </ul>
                     </div>
                   </div>
                   <div class="vac-img">
-                    <img src="img/vac/hs.webp" alt="Wow Solo" width="480" height="270">
+                    <img
+                      src="img/vac/hs.webp"
+                      alt="Wow Solo"
+                      width="480"
+                      height="270"
+                    />
                   </div>
-                  <!-- Hearthstone --------------------- -->
+                  <!-- Hearthstone -->
                 </div>
-                </div>
-                
-                
               </div>
-            </div>
-
-
             </div>
           </div>
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
       </section>
       <section class="advantages">
         <div class="bottom-waves"></div>
@@ -694,17 +738,23 @@
             каждого геймера? Её можно воплотить в реальность. Бустинг — это
             профессия будущего, позволяющая заработать на любимом хобби.
           </h3>
-          <div class="marquiz__container"></div>
-            <a class="btn-request" href="#popup:marquiz_60cdd13217324a003e5263e4"
+
+          <a class="btn-request" href="#popup:marquiz_60cdd13217324a003e5263e4"
             >Подать заявку</a
-          </div>
+          >
         </div>
+        <!-- </div> -->
       </section>
     </main>
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="img/logo-bw.png" alt="Black and White Logo" />
+          <img
+            src="img/logo-bw.png"
+            alt="Black and White Logo"
+            width="176"
+            height="46"
+          />
           <p>Монетизируй свои скилы!</p>
         </div>
         <div class="footer-nav">
@@ -725,10 +775,23 @@
           </nav>
         </div>
         <div class="contacts">
+          <h3 style="text-align: center">Contacts</h3>
           <ul>
-            <li>email</li>
-            <li>telegram</li>
-            <li>discord</li>
+            <li>
+              Email:
+              <a href="mailto:jobs@epiccarry.com" target="_blank"
+                >jobs@epiccarry.com</a
+              >
+            </li>
+            <li>Telegram: <a href="t.me" target="_blank"></a></li>
+            <li>
+              Discord:
+              <a
+                href="https://discord.com/users/225954580704264192"
+                target="_blank"
+                >EpicSearch#9654</a
+              >
+            </li>
           </ul>
         </div>
       </div>

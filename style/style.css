@@ -1,6 +1,9 @@
 :root {
   --max-width: 1140px;
 }
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -32,19 +35,20 @@ ul {
 }
 .btn-request {
   display: inline-block;
-  /* width: 100%; */
   height: 100%;
   max-width: 200px;
   font-weight: 300;
-  padding: 18px 21px;
-  background-color: #21bda1;
+  padding: 10px 21px;
+  background-color: transparent;
   font-size: 22px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   cursor: pointer;
+  border: 3px #21bda1 solid;
   transition: 0.3s;
 }
 .btn-request:hover {
+  background-color: rgba(0, 0, 0, 0.041);
   box-shadow: 1.7px 5.8px 21px 0px rgba(33, 189, 161, 0.5);
 }
 .lines {
@@ -81,15 +85,27 @@ ul {
   overflow: hidden;
 }
 .header {
-  padding: 0 15px;
+  background-color: white;
+}
+.header-full {
+  margin: 0 auto;
+  max-width: 1240px;
 }
 .header_wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1240px;
+  /* width: 1240px; */
+  max-width: 100%;
+  padding: 0 10px;
   background-color: rgb(255, 255, 255);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .nav {
   display: inline-block;
@@ -111,7 +127,9 @@ ul {
   position: relative;
   max-width: 100%;
   height: 100%;
-  background-image: url("../img/monetize-bg.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-image: url("../img/lazy-bg.jpg");
   background-repeat: none;
   background-size: cover;
   background-color: black;
@@ -209,6 +227,9 @@ svg.waves {
   align-items: center;
   padding: 0 20px;
 }
+#mob-wow > ul {
+  margin-left: -50px;
+}
 .vacancy {
   font-size: 20px;
   text-align: left;
@@ -294,6 +315,7 @@ ul.requirements {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -367,7 +389,11 @@ a.btn-mon {
   }
   .top-waves,
   .bottom-waves {
-    height: 25px;
+    height: 43px;
+    background-repeat: no-repeat;
+  }
+  .monetize-content {
+    padding: 10px 0px;
   }
 }
 @media (max-width: 495px) {
@@ -378,6 +404,12 @@ a.btn-mon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .footer-nav-items {
+    display: flex;
+  }
+  .footer-nav-item {
+    margin-right: 20px;
   }
 }
 @media (max-width: 396px) {
@@ -395,16 +427,28 @@ a.btn-mon {
     display: inline-block;
   }
 }
-@media (max-width: 317px) {
+@media (max-width: 318px) {
   h1 {
     font-size: 20px;
   }
   h2 {
     font-size: 40px;
+    margin: 15px 0;
   }
+  .top-waves {
+    display: none;
+  }
+}
+.contacts ul,
+.footer-nav ul {
+  margin-left: -50px;
 }
 #destiny-all,
 #hs-all,
 #dota-all {
   margin: 0 auto;
+}
+
+.contact-item {
+  padding: 10px 0;
 }
