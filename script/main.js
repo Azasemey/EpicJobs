@@ -88,6 +88,16 @@ window.addEventListener("load", function () {
   monetizeBG.style.webkitFilter = `none`;
 });
 
+window.addEventListener("load", function (e) {
+  const wow = document.querySelectorAll("#wow img");
+  const classic = document.querySelectorAll("#wow img");
+  [...wow, ...classic].forEach((e) => {
+    e.src = e.dataset.src;
+    e.addEventListener("load", function () {
+      e.classList.remove("lazy-img");
+    });
+  });
+});
 // const navbar = document.querySelector(".header");
 
 // const sticky = navbar.offsetTop;
