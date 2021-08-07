@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/norm.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -150,19 +151,8 @@
             </li>
             <li class="nav_item">
               <!-- <a href="#" class="nav_link bottom_green">Подать заявку</a> -->
-              <a
-                class="
-                  marquiz__button marquiz__button_blicked marquiz__button_shadow
-                "
-                href="#popup:marquiz_60cdd13217324a003e5263e4"
-                data-version="2"
-                style="
-                  --marquiz-button-color: #21bda1;
-                  --marquiz-button-text-color: #fff;
-                  --marquiz-button-alpha-color: rgba(33, 189, 161, 0.5);
-                "
-                >Подать заявку</a
-              >
+              <a class="btn-request" href="#popup:marquiz_60cdd13217324a003e5263e4"
+              >Подать заявку</a
             </li>
           </ul>
         </nav>
@@ -170,6 +160,8 @@
     </header>
     <main class="main">
       <section class="monetize">
+        <div class="top-waves"></div>
+        <!-- <div class="m-wrap"> -->
         <div class="monetize-content">
           <h1>Зарабатывай <span class="green">Играючи</span></h1>
           <div class="svg">
@@ -179,20 +171,21 @@
           <div class="m-links">
             <a href="#"><span>👉 </span>Как стать Бустером?</a>
             <a href="#"><span>👉 </span>Кто такой бустер?</a>
+            <a class="btn-request btn-mon" href="#popup:marquiz_60cdd13217324a003e5263e4">Подать заявку</a>
           </div>
         </div>
-        <svg class="waves"><use xlink:href="#waves"></use></svg>
+        <!-- </div> -->
       </section>
       <section class="offer">
         <div class="offer-wrap">
           <h2>Зарабатывай в</h2>
           <div class="main-tabs">
             <div class="game-tabs">
-              <button class="btn active bottom_green" data-game="wow">
+              <button class="btn bottom_green" data-game="dota">
                 <img
-                  src="img/games/wow-logo.png"
-                  alt="WoW Logo"
-                  data-game="wow"
+                  src="img/games/dota-2.png"
+                  alt="Dota 2 Logo"
+                  data-game="dota"
                   width="100"
                   height="100"
                 />
@@ -206,20 +199,21 @@
                   height="100"
                 />
               </button>
+
+              <button class="btn active bottom_green" data-game="wow">
+                <img
+                  src="img/games/wow-logo.png"
+                  alt="WoW Logo"
+                  data-game="wow"
+                  width="100"
+                  height="100"
+                />
+              </button>
               <button class="btn bottom_green" data-game="destiny">
                 <img
                   src="img/games/destiny-logo.png"
                   alt="Desting Logo"
                   data-game="destiny"
-                  width="100"
-                  height="100"
-                />
-              </button>
-              <button class="btn bottom_green" data-game="dota">
-                <img
-                  src="img/games/dota-2.png"
-                  alt="Dota 2 Logo"
-                  data-game="dota"
                   width="100"
                   height="100"
                 />
@@ -234,8 +228,56 @@
                 />
               </button>
               <!-- Game tabs -->
+
             </div>
             <!-- Main Tabs -->
+          </div>
+          <div class="vacancy-tab-adaptive">
+            <div class="mob-wow mob" id="mob-wow">
+            <ul class="vacancies">
+              <li class="vacancy">
+                <button class="btn active vac bottom_green" data-vac="solo-wow">
+                  Соло Бустер
+                </button>
+              </li>
+              <li class="vacancy">
+                <button class="btn vac bottom_green" data-vac="raider-wow">
+                  Рейдер
+                </button>
+              </li>
+              <li class="vacancy">
+                <button class="btn vac bottom_green" data-vac="mythic-wow">
+                  Мифик+
+                </button>
+              </li>
+              <li class="vacancy">
+                <button class="btn vac bottom_green" data-vac="pvp-wow">
+                  PvP
+                </button>
+              </li>
+            </ul>
+            </div>
+            <div class="mob-classic mob none" id="mob-classic">
+              <ul class="vacancies">
+                <li class="vacancy">
+                  <button
+                    class="btn active vac bottom_green"
+                    data-vac="solo-classic"
+                  >
+                    Соло Бустер
+                  </button>
+                </li>
+                <li class="vacancy">
+                  <button
+                    class="btn vac bottom_green"
+                    data-vac="dungeons-classic"
+                  >
+                    Dungeons
+                  </button>
+                </li>
+
+              </ul>
+            </div>
           </div>
           <!-- Offers Wrap -->
         </div>
@@ -278,6 +320,7 @@
                     </li>
                   </ul>
                 </div>
+
                 <div id="solo-wow" class="descr-img">
                   <div class="vac-description">
                     <div>
@@ -310,19 +353,319 @@
                       height="270"
                     />
                   </div>
+                  <!-- SOLO WOW --------------------- -->
+                </div>
+                <div id="raider-wow" class="descr-img none">
+                  <div class="vac-description">
+                    <div>
+                      <b>
+                        Вакансия подойдет для опытных игроков, желающих работать
+                        в команде.
+                      </b>
+                      <b>График:</b>
+                      <p>
+                        8 – 12 часов в день. График работы регулируется рейд
+                        лидером.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>Знание английского языка для понимания игры.</li>
+                        <li>Наличие своего аккаунта на EU.</li>
+                        <li>Знание нескольких классов.</li>
+                        <li>
+                          Опыт игры в предыдущих контентах ( будет являться
+                          преимуществом).
+                        </li>
+                        <li>
+                          Ответственность, cамодисциплина, желание развиваться.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img
+                      src="img/vac/wow/raider-wow.webp"
+                      alt="Wow Solo"
+                      width="480"
+                      height="270"
+                    />
+                  </div>
+                  <!-- RAIDER WOW --------------------- -->
+                </div>
+                <div id="mythic-wow" class="descr-img none">
+                  <div class="vac-description">
+                    <div>
+                      <b>
+                        Вакансия подойдет для укомплектованных и сыгранных
+                        групп.
+                      </b>
+                      <b>Задачи:</b>
+                      <p>
+                        Прохождение Мифик+ подземелий разных сложностей (M0 –
+                        M15+) , фарм фулл гиров, достижений.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>Знание английского языка для понимания игры.</li>
+                        <li>
+                          Наличие своих аккаунтов, готовой группы, трейдеров.
+                        </li>
+                        <li>
+                          Ответственность, cамодисциплина, желание развиваться.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img
+                      src="img/vac/wow/mythic-wow.webp"
+                      alt="Wow Solo"
+                      width="480"
+                      height="270"
+                    />
+                  </div>
+                  <!-- MYTHIC WOW --------------------- -->
+                </div>
+                <div id="pvp-wow" class="descr-img none">
+                  <div class="vac-description">
+                    <div>
+                      <b>
+                        Вакансии в разных направлениях: Арена рейтинг ( коучинг)
+                        ,РБГ рейтинг ( коучинг ), фарм хонора, достижений,
+                        сезонных маунтов.
+                      </b>
+                      <b>График:</b>
+                      <p>
+                        6 – 8 часов в день. Время работы выбираете вы сами,
+                        главное успеть выполнить заказ в срок.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>Знание английского языка для понимания игры.</li>
+                        <li>Наличие своего аккаунта.</li>
+                        <li>Опыт игры в WoW.</li>
+                        <li>
+                          Дисциплинированность, усидчивость, навыки
+                          самоконтроля.
+                        </li>
+                        <li>Умение грамотно выстроить свой рабочий график.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img
+                      src="img/vac/wow/pvp-wow.webp"
+                      alt="Wow Solo"
+                      width="480"
+                      height="270"
+                    />
+                  </div>
+                  <!-- PVP WOW --------------------- -->
                 </div>
               </div>
             </div>
-            <div id="classic" class="none" class="game">
-              <p>Classic</p>
+            <div id="classic" class="none">
+              <div class="game">
+                <div class="vacancy-tab vac-block">
+                  <h3>Вакансии</h3>
+                  <ul class="vacancies">
+                    <li class="vacancy">
+                      <button
+                        class="btn active vac bottom_green"
+                        data-vac="solo-classic"
+                      >
+                        Соло Бустер
+                      </button>
+                    </li>
+                    <li class="vacancy">
+                      <button
+                        class="btn vac bottom_green"
+                        data-vac="dungeons-classic"
+                      >
+                        Dungeons
+                      </button>
+                    </li>
+ 
+                  </ul>
+                </div>
+
+                <div id="solo-classic" class="descr-img">
+                  <div class="vac-description">
+                    <div>
+                      <p>
+                        Нужно прокачивать уровни персонажей или репутацию,
+                        фармить маунтов, голду и многое другое. Вакансия
+                        подойдет для любителей одиночной игры в актуале.
+                      </p>
+                      <b>График:</b>
+                      <p>
+                        6-12 часов в день. График работы регулируете вы сами.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>
+                          Знание механик, квестов и прочего контента игры.
+                        </li>
+                        <li>
+                          Ответственность, cамодисциплина, желание развиваться.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img
+                      src="img/vac/classic/solo-classic.webp"
+                      alt="Classic Solo"
+                      width="480"
+                      height="270"
+                    />
+                  </div>
+                  <!-- SOLO WOW --------------------- -->
+                </div>
+                <div id="dungeons-classic" class="descr-img none">
+                  <div class="vac-description">
+                    <div>
+                      <b>
+                        Вакансия подойдет для укомплектованных и сыгранных групп.
+                      </b>
+                      <b>Задачи:</b>
+                      <p>
+                        Прохождение подземелий разных сложностей (нормал или героик) , фарм фулл гиров.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>Знание английского языка для понимания игры.</li>
+                        <li>Наличие своих аккаунтов, готовой группы.</li>
+                        <li>
+                          Ответственность, cамодисциплина, желание развиваться.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <video
+                      src="img/vac/classic/dungeons-classic.webm"
+                      alt="Dungeons Classic"
+                      width="480"
+                      height="270"
+                    />
+                  </div>
+                  <!-- Dungeons Classic --------------------- -->
+                </div>
+                
+                
+              </div>
+              <!-- Classic -->
             </div>
-            <div id="destiny" class="none" class="game">
-              <p>Destiny</p>
+            <div id="destiny" class="none">
+              <div class="game">
+                <div id="destiny-all" class="descr-img">
+                  <div class="vac-description">
+                    <div>
+                      <p>
+                        Нужно прокачивать уровни персонажей или репутацию,
+                        выбивать редкие достижения, фармить маунтов, голду,
+                        открывать союзные расы и многое другое. Вакансия
+                        подойдет для любителей одиночной игры в актуале.
+                      </p>
+                      <b>График:</b>
+                      <p>
+                        4-8 часов в день. График работы регулируете вы сами.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>
+                          Знание всех механик, квестов, ачивок и прочего
+                          контента актуала.
+                        </li>
+                        <li>Ответственность, самодисциплина, самоконтроль.</li>
+                        <li>Наличие свободного времени — от 4 часов в день.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img src="img/vac/wow/solo-wow.webp" alt="Wow Solo" width="480" height="270">
+                  </div>
+                  <!-- Destiny --------------------- -->
+                </div>
+                </div>
+                
+                
+              </div>
+            <div id="hs" class="none">
+              <div class="game">
+                <div id="hs-all" class="descr-img">
+                  <div class="vac-description">
+                    <div>
+                      <p>
+                        Необходимо участвовать в рейтинговых матчах, прокачивать рейтинг аккаунта, фармить редкие карты, собирать колоды и играть в аркадах. Работать придётся как на связи с клиентом, так и на его аккаунте.
+                      </p>
+                      <b>График:</b>
+                      <p>
+                        От 4 часов в день. График придется подстраивать под клиента.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>
+                          Опыт игры в Hearthstone от 2 лет.
+                        </li>
+                        <li>Минимум 5 легенд на собственном аккаунте.</li>
+                        <li>Знание основных тактик и выигрышных колод в актуальной</li>
+                        <li>Знание английского языка на хорошем уровне.</li>
+                        <li>Самодисциплина, ответственность, пунктуальность.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img src="img/vac/hs.webp" alt="Hearthstone promo" width="480" height="270">
+                  </div>
+                  <!-- Hearthstone --------------------- -->
+                </div>
+                </div>
+                
+                
+              </div>
+            <div id="dota" class="none">
+              <div class="game">
+                <div id="dota-all" class="descr-img">
+                  <div class="vac-description">
+                    <div>
+                      <p>
+                        От бустера требуется прокачивать рейтинг, поднимать винрейт и статистику аккаунта, фармить боевой пропуск и так далее.
+                      </p>
+                      <b>График:</b>
+                      <p>
+                        До 8 часов в день. У бустеров свободный график, ограничивают только дедлайны.
+                      </p>
+                      <b>Требования:</b>
+                      <ul class="requirements">
+                        <li>
+                          Опыт игры в Dota 2.
+                        </li>
+                        <li>Хороший ММР — от 5500.</li>
+                        <li>Высокий винрейт — лучше, чтобы он стремился к 100% на 1-2 героях.</li>
+                        <li>Терпение, усидчивость, умение самостоятельно выстроить рабочий график, самоконтроль и дисциплина.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="vac-img">
+                    <img src="img/vac/hs.webp" alt="Wow Solo" width="480" height="270">
+                  </div>
+                  <!-- Hearthstone --------------------- -->
+                </div>
+                </div>
+                
+                
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
       </section>
       <section class="advantages">
+        <div class="bottom-waves"></div>
         <div class="advs">
           <div class="adv-item">
             <svg class="adv-icon"><use xlink:href="#adv"></use></svg
@@ -351,21 +694,11 @@
             каждого геймера? Её можно воплотить в реальность. Бустинг — это
             профессия будущего, позволяющая заработать на любимом хобби.
           </h3>
-          <a
-            class="
-              marquiz__button marquiz__button_blicked marquiz__button_shadow
-            "
-            href="#popup:marquiz_60cdd13217324a003e5263e4"
-            data-version="2"
-            style="
-              --marquiz-button-color: #21bda1;
-              --marquiz-button-text-color: #fff;
-              --marquiz-button-alpha-color: rgba(33, 189, 161, 0.5);
-            "
+          <div class="marquiz__container"></div>
+            <a class="btn-request" href="#popup:marquiz_60cdd13217324a003e5263e4"
             >Подать заявку</a
-          >
+          </div>
         </div>
-        <div class="svg"></div>
       </section>
     </main>
     <footer class="footer">
@@ -384,7 +717,9 @@
                 <a href="index.html">FAQ</a>
               </li>
               <li class="footer-nav-item">
-                <a href="index.html">Подать заявку</a>
+                <a href="#popup:marquiz_60cdd13217324a003e5263e4"
+                  >Подать заявку</a
+                >
               </li>
             </ul>
           </nav>

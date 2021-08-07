@@ -1,3 +1,6 @@
+:root {
+  --max-width: 1140px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -20,11 +23,29 @@ h1 {
 h2 {
   font-size: 50px;
   font-weight: 300;
+
   /* margin-top: -25px; */
   color: black;
 }
 ul {
   list-style-type: none;
+}
+.btn-request {
+  display: inline-block;
+  /* width: 100%; */
+  height: 100%;
+  max-width: 200px;
+  font-weight: 300;
+  padding: 18px 21px;
+  background-color: #21bda1;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-request:hover {
+  box-shadow: 1.7px 5.8px 21px 0px rgba(33, 189, 161, 0.5);
 }
 .lines {
   padding: 0;
@@ -34,11 +55,11 @@ ul {
   fill: #21bda0;
 }
 .svg {
-  height: 100%;
+  /* height: 100%; */
   animation-iteration-count: infinite;
   animation-duration: 3s;
   animation-name: slidein;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes slidein {
@@ -51,15 +72,16 @@ ul {
   }
 }
 .waves {
-  padding: 0;
-  margin-top: ;
+  position: absolute;
+  bottom: 0;
 }
 .main {
   /* max-width: 1920px; */
   margin: 0 auto;
+  overflow: hidden;
 }
 .header {
-  /* padding: 30px 0; */
+  padding: 0 15px;
 }
 .header_wrap {
   display: flex;
@@ -86,7 +108,7 @@ ul {
 /* Блок монетизируй скилы */
 
 .monetize {
-  /* position: relative; */
+  position: relative;
   max-width: 100%;
   height: 100%;
   background-image: url("../img/monetize-bg.jpg");
@@ -94,13 +116,16 @@ ul {
   background-size: cover;
   background-color: black;
 }
+/* .m-wrap {
+  max-width: 1920px;
+  position: relative;
+} */
 .monetize-content {
-  max-width: 1140px;
+  max-width: var(--max-width);
   margin: 0 auto;
   height: 100%;
   padding: 50px 0;
   z-index: 5;
-  position: relative;
   /* background-color: black; */
 }
 .monetize-content a {
@@ -132,13 +157,14 @@ svg.waves {
   padding: 0;
   margin: 0;
   fill: white;
-  transform: scale(-2);
-  width: 1268px;
-  max-width: 100%;
+  transform: rotate(180deg);
+  /* height: 190px; */
+  /* max-width: 100%; */
   z-index: 1;
 }
 /* Зарабатывай в ... */
 .offer {
+  margin-top: 100px;
   width: 100%;
   height: 100%;
 }
@@ -163,6 +189,7 @@ svg.waves {
 }
 .game-tabs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -177,6 +204,7 @@ svg.waves {
 }
 .game {
   display: flex;
+  max-width: 1920px;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
@@ -201,20 +229,43 @@ ul.requirements {
   list-style-type: disc;
 }
 /* Advantages */
+.top-waves {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='waves' viewBox='0 0 1000 100'%3E%3Cg%3E%3Cpath opacity='0.33' d='M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z' fill='white'%3E%3C/path%3E%3Cpath opacity='0.66' d='M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z' fill='white'%3E%3C/path%3E%3Cpath d='M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat-x: repeat;
+  overflow: hidden;
+  height: 100px;
+  transform: scale(-2);
+  background-position-x: center;
+}
 .advantages {
   width: 100%;
   margin: 0 auto;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='waves' viewBox='0 0 1000 100'%3E%3Cg%3E%3Cpath opacity='0.33' d='M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z' fill='white'%3E%3C/path%3E%3Cpath opacity='0.66' d='M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z' fill='white'%3E%3C/path%3E%3Cpath d='M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: no-repeat;
+  position: relative;
+
   background-color: #f8f8f8;
+}
+.bottom-waves {
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='waves' viewBox='0 0 1000 100'%3E%3Cg%3E%3Cpath opacity='0.33' d='M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z' fill='white'%3E%3C/path%3E%3Cpath opacity='0.66' d='M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z' fill='white'%3E%3C/path%3E%3Cpath d='M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-repeat-x: repeat;
+  height: 100px;
+  background-position-x: center;
 }
 
 .advs,
 .call-to-action {
   display: flex;
   margin: 0 auto;
-  padding: 20px 0;
   max-width: 1140px;
+}
+.advs {
+  padding: 20px 0;
 }
 .advs {
   justify-content: space-between;
@@ -237,6 +288,7 @@ ul.requirements {
   fill: #dddddd;
 }
 .footer {
+  padding: 50px 0;
   background-color: #f8f8f8;
 }
 .footer-content {
@@ -247,4 +299,101 @@ ul.requirements {
 }
 .none {
   display: none;
+}
+.vacancy-tab-adaptive {
+  display: none;
+}
+a.btn-mon {
+  display: none;
+  color: white;
+}
+@media (max-width: 1416px) {
+  .vacancy-tab {
+    display: none;
+  }
+  .descr-img {
+    width: 100%;
+  }
+  .vacancy-tab-adaptive {
+    display: block;
+  }
+  .vacancy-tab-adaptive ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .monetize-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .m-links {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .m-links a {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  .top-waves,
+  .bottom-waves {
+    height: 50px;
+  }
+  .descr-img {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .vacancy {
+    font-size: 25px;
+  }
+}
+@media (max-width: 700px) {
+  .advs {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  ul.nav_items li:nth-child(2),
+  ul.nav_items li:nth-child(1) {
+    display: none;
+  }
+  .top-waves,
+  .bottom-waves {
+    height: 25px;
+  }
+}
+@media (max-width: 495px) {
+  .vac-img {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 396px) {
+  .nav {
+    display: none;
+  }
+  .header_wrap {
+    flex-direction: column;
+  }
+
+  a.btn-mon {
+    display: inline-block;
+  }
+}
+#destiny-all,
+#hs-all,
+#dota-all {
+  margin: 0 auto;
 }
