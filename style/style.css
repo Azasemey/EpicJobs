@@ -331,7 +331,7 @@ a.btn-mon {
   .m-links {
     position: unset;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .m-links a {
@@ -384,12 +384,23 @@ a.btn-mon {
   .nav {
     display: none;
   }
+  .m-links {
+    flex-direction: column;
+  }
   .header_wrap {
     flex-direction: column;
   }
 
   a.btn-mon {
     display: inline-block;
+  }
+}
+@media (max-width: 317px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 40px;
   }
 }
 #destiny-all,
