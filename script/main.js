@@ -83,7 +83,7 @@ tabs();
 const monetizeBG = document.querySelector(".monetize");
 
 window.addEventListener("load", function () {
-  monetizeBG.style.backgroundImage = `url("../img/monetize-bg.jpg")`;
+  monetizeBG.style.backgroundImage = `url("/img/monetize-bg.jpg")`;
   monetizeBG.style.filter = `none`;
   monetizeBG.style.webkitFilter = `none`;
 });
