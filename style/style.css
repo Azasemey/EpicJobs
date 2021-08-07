@@ -134,6 +134,9 @@ ul {
   background-size: cover;
   background-color: white;
 }
+.lazy-img {
+  filter: blur(20px);
+}
 /* .m-wrap {
   max-width: 1920px;
   position: relative;
