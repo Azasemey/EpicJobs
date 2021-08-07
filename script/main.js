@@ -83,14 +83,12 @@ tabs();
 const monetizeBG = document.querySelector(".monetize");
 
 window.addEventListener("load", function () {
-  monetizeBG.style.backgroundImage = 'url("../img/monetize-bg.jpg")';
+  monetizeBG.style.backgroundImage =
+    'url("https://azasemey.github.io/EpicJobs/img/monetize-bg.jpg")';
   monetizeBG.style.filter = `none`;
   monetizeBG.style.webkitFilter = `none`;
-});
-
-window.addEventListener("load", function (e) {
   const wow = document.querySelectorAll("#wow img");
-  const classic = document.querySelectorAll("#wow img");
+  const classic = document.querySelectorAll("#classic img");
   [...wow, ...classic].forEach((e) => {
     e.src = e.dataset.src;
     e.addEventListener("load", function () {
@@ -98,6 +96,7 @@ window.addEventListener("load", function (e) {
     });
   });
 });
+
 // const navbar = document.querySelector(".header");
 
 // const sticky = navbar.offsetTop;

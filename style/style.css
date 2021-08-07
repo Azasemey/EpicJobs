@@ -129,7 +129,7 @@ ul {
   height: 100%;
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  background-image: url("/img/lazy-bg.jpg");
+  background-image: url("https://azasemey.github.io/EpicJobs/img/lazy-bg.jpg");
   background-repeat: none;
   background-size: cover;
   background-color: white;
